@@ -1,4 +1,4 @@
-# Industrial Bakery Simulator (Discrete-Time) — C
+# Industrial Bakery Simulator (Discrete-Time) - C
 
 Discrete-time simulation of an industrial bakery order-management system, developed for the **Algorithms and Data Structures** final exam (AY 2023–2024).  
 **Final grade: 30/30 cum laude**.
