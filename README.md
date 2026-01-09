@@ -9,6 +9,7 @@ The system models recipes, ingredient inventories with expiration, order process
 
 ## Build & Run
 gcc Lode.c -o bakery
+
 ./bakery < input.txt > output.txt
 
 ## System rules:
