@@ -12,6 +12,16 @@ gcc Lode.c -o bakery
 
 ./bakery < input.txt > output.txt
 
+## Input format
+The first line contains two integers:
+<corriere_periodicita> <corriere_capienza>
+
+Each subsequent line is one command:
+- aggiungi_ricetta <nome_ricetta> <ingrediente1> <q1> <ingrediente2> <q2> ...
+- rimuovi_ricetta <nome_ricetta>
+- rifornimento <ingrediente1> <q1> <scadenza1> <ingrediente2> <q2> <scadenza2> ...
+- ordine <nome_ricetta> <numero_elementi_ordinati>
+
 ## System rules:
 Ingredients are stored in lots with quantity and expiry time and are consumed by earliest-expiry-first. Orders are prepared only if all required ingredients are available in full; otherwise they are queued FIFO and re-evaluated after restocks. The courier loads only complete orders within its gram-capacity, selecting the longest feasible prefix by arrival time and loading by descending order weight (tie-break by earlier arrival).
 
